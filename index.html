@@ -13,14 +13,12 @@
 
     <header>
         <nav class="navbar navbar-dark navbar-expand-sm bg-primary">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar">
-                    <img src="public/Logo Argentina Programa.jpg" alt="Logo de Argentina Programa" width="30" height="24">
-                    <p class="navbar-brand">#ArgentinaPrograma</p>
+                    <p><img src="public/Logo Argentina Programa.jpg" alt="Logo de Argentina Programa" width="30" height="24"> #ArgentinaPrograma</p>
                 </a>
             </div>
             <div class="container-fluid">
-                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -42,46 +40,69 @@
     </header>
 
     <main>
+        <!--Acerca de-->
         <div class="card">
             <img src="public/Biblioteca nacional austríaca.jpg" class="card-img-top" alt="Foto de portada que representa a la biblioteca nacional austríaca">
             <div class="card-body">
-              <h1 class="card-title">Sergio Luis Pagano</h1>
-              <p class="card-text">Desarrollador FullStack jr.</p>
+                <h1 class="card-title">Sergio Luis Pagano</h1>
+                <p class="card-text">Desarrollador FullStack jr.</p>
             </div>
         </div>
+
+        <!--Educación-->
         <div class="card">
             <div class="card-body">
-              <h3 class="card-title">Educación</h3>
-              <p class="card-text">Estudiante de Bibliotecología en la UBA.</p>
-              <div class="card">
-                <div class="row g-0">
-                    <div class="col-sm-4">
-                      <img src="public/Logo UBA.png" class="img-fluid rounded-start" alt="Logo de la Universidad de Buenos Aires">
+                <h3 class="card-title">Educación</h3>
+                <!--UBA-->
+                <div class="card">
+                    <div class="row">
+                       <div class="col-sm-4">
+                        <img src="public/Logo UBA.png" class="img-fluid rounded-start" alt="Logo de la Universidad de Buenos Aires">
                     </div>
                     <div class="col-sm-8">
-                      <div class="card-body">
-                        <h4 class="card-title">Estudiante de Bibliotecología</h4>
-                        <p class="card-text">[La carrera consiste en]</p>
-                        <p class="card-text"><small class="text-muted">Años de estudio: 1 año.</small></p>
-                      </div>
+                          <div class="card-body">
+                            <h4 class="card-title">Estudiante de Bibliotecología</h4>
+                            <span class="card-text"></span>
+                            <p class="card-text">[La carrera consiste en]</p>
+                            <p class="card-text"><small class="text-muted">Periodo de estudio: 1 año.</small></p>
+                          </div>
+                    </div>
+                </div>
+                <!--ITBA-->
+                <div class="card">
+                    <div class="row">
+                       <div class="col-sm-4">
+                        <img src="public/Logo ITBA.jpg" class="img-fluid rounded-start" alt="Logo del Instituto Tecnológico de Buenos Aires">
+                    </div>
+                    <div class="col-sm-8">
+                          <div class="card-body">
+                            <h4 class="card-title">Desarrollador FullStack Jr.</h4>
+                            <span class="card-text">Título: Desarrollador FullStack Jr.</span>
+                            <p class="card-text">[La carrera consiste en]</p>
+                            <p class="card-text"><small class="text-muted">Periodo de estudio: 4 meses.</small></p>
+                          </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!--Experiencia-->
         <div class="card">
             <div class="card-body">
-              <h3 class="card-title">Experiencia</h3>
-              <div class="card">
-                <div class="row g-0">
-                    <div class="col-sm-4">
-                      <img src="public/Healthcare logo.jpe" class="img-fluid rounded-start" alt="Logo de Healthcare Group, consultora de marketing médico">
-                    </div>
-                    <div class="col-sm-8">
-                      <div class="card-body">
-                        <h5 class="card-title">[como se llama lo que hice]</h5>
-                        <p class="card-text">El trabajo consistía en llamar a hospitales y consultorios para saber si los médicos de una base de datos seguían operando en los consultorios anotados en dicha base de datos, y obtener su infomación de contacto. Luego, rellenar un excel con la información obtenida.</p>
-                        <p class="card-text"><small class="text-muted">Periodo de trabajo: 2 semanas.</small></p>
-                      </div>
+                <h3 class="card-title">Experiencia</h3>
+                <!--Healthcare-->
+                <div class="card">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="public/Healthcare logo.jpe" class="img-fluid rounded-start" alt="Logo de Healthcare Group, consultora de marketing médico">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body">
+                                <h5 class="card-title">[como se llama lo que hice]</h5>
+                                <p class="card-text">El trabajo consistía en llamar a hospitales y consultorios para saber si los médicos de una base de datos seguían operando en los consultorios anotados en dicha base de datos, y obtener su infomación de contacto. Luego, rellenar un excel con la información obtenida.</p>
+                                <p class="card-text"><small class="text-muted">Periodo de trabajo: 2 semanas.</small></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -90,7 +111,21 @@
 
     <footer>
         <hr>
-        <p><strong>Información de contacto:</strong> sergioluispagano@gmail.com</p>
+        <div class="container">
+            <div class="row">
+                    <div class="col-12 col-sm-8">
+                        <p><strong>Información de contacto</strong></p>
+                        <p>Mail: sergioluispagano@gmail.com</p>
+                        <p>Tel: +54 9 11 2850-6984</p>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <strong>Tecnologías usadas en esta página</strong>
+                        <p>HTML, CSS, y Bootstrap</p>
+                        <p>Javascript,</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>
