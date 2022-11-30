@@ -4,83 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
+    <!-- CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Merriweather">
+
     <title>Luis Pagano CV</title>
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar navbar-dark navbar-expand-sm bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar">
-                    <p><img src="public/Logo Argentina Programa.jpg" alt="Logo de Argentina Programa" width="30" height="24"> #ArgentinaPrograma</p>
-                </a>
-            </div>
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <img class="navbar-logo" src="public/Logo Argentina Programa.jpg" alt="Logo de Argentina Programa"> 
+              <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar">#ArgentinaPrograma</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="https://www.instagram.com/persona_134/">Instagram<i class="bi bi-instagram"></i></a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#">Tumblr</a>
-                         </li>
-                          <li class="nav-item">
-                            <button class="btn btn-primary" type="button" href="#">Login</button>
-                        </li>
-                    </ul>
-                </div>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/persona_134/">Instagram</a>
+                  </li>
+                  <li class="nav-item">
+                    <!--El disabled es a proposito-->
+                    <a class="nav-link disabled" href="https://www.tumblr.com/persona134">Tumblr</a>
+                  </li>
+                </ul>
+                  <button class="btn btn-dark">Login</button>
+                </form>
+              </div>
             </div>
-          </nav>
+        </nav>
     </header>
 
     <main>
         <!--Acerca de-->
-        <div class="card">
+        <div class="card acerca-de-card">
             <img src="public/Biblioteca nacional austríaca.jpg" class="card-img-top" alt="Foto de portada que representa a la biblioteca nacional austríaca">
             <div class="card-body">
-                <h1 class="card-title">Sergio Luis Pagano</h1>
-                <p class="card-text">Desarrollador FullStack jr.</p>
+                <img src="public/I wish this was me.jpg" class="img-fluid profile-pic" alt="Foto de perfil">
+                <h1 class="card-title acerca-de-title">Sergio Luis Pagano</h1>
+                <p class="card-text">Desarrollador FullStack jr</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
-
+        
         <!--Educación-->
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title">Educación</h3>
+                <h3 class="card-title card-title-grande">Educación</h3>
                 <!--UBA-->
-                <div class="card">
+                <div class="card card-sub">
                     <div class="row">
-                       <div class="col-sm-4">
-                        <img src="public/Logo UBA.png" class="img-fluid rounded-start" alt="Logo de la Universidad de Buenos Aires">
-                    </div>
-                    <div class="col-sm-8">
-                          <div class="card-body">
-                            <h4 class="card-title">Estudiante de Bibliotecología</h4>
-                            <span class="card-text"></span>
-                            <p class="card-text">[La carrera consiste en]</p>
-                            <p class="card-text"><small class="text-muted">Periodo de estudio: 1 año.</small></p>
+                       <div class="col-md-2">
+                            <img src="public/Logo UBA.png" class="img-fluid rounded-start card-horizontal-image" alt="Logo de la Universidad de Buenos Aires">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <h4 class="card-title">Estudiante de Bibliotecología</h4>
+                                <p class="card-text">[La carrera consiste en]</p>
+                                <p class="card-text"><small class="text-muted">Periodo de estudio: 1 año.</small></p>
                           </div>
+                        </div>
                     </div>
                 </div>
                 <!--ITBA-->
-                <div class="card">
+                <div class="card card-sub">
                     <div class="row">
-                       <div class="col-sm-4">
-                        <img src="public/Logo ITBA.jpg" class="img-fluid rounded-start" alt="Logo del Instituto Tecnológico de Buenos Aires">
+                        <div class="col-md-2">
+                            <img src="public/Logo ITBA.jpg" class="img-fluid rounded-start card-horizontal-image" alt="Logo del Instituto Tecnológico de Buenos Aires">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <h4 class="card-title">Desarrollador FullStack Jr.</h4>
+                                <h6 class="card-text">Título: Desarrollador FullStack Jr.</h6>
+                                <p class="card-text">[La carrera consiste en]</p>
+                                <p class="card-text"><small class="text-muted">Periodo de estudio: 4 meses.</small></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-8">
-                          <div class="card-body">
-                            <h4 class="card-title">Desarrollador FullStack Jr.</h4>
-                            <span class="card-text">Título: Desarrollador FullStack Jr.</span>
-                            <p class="card-text">[La carrera consiste en]</p>
-                            <p class="card-text"><small class="text-muted">Periodo de estudio: 4 meses.</small></p>
-                          </div>
+                </div>
+                <!--Chicas en Tecnología-->
+                <div class="card card-sub">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="public/Chicas En Tecnología logo.png" class="img-fluid rounded-start card-horizontal-image" alt="Logo del Instituto Tecnológico de Buenos Aires">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <h4 class="card-title">Programa de conectadas</h4>
+                                <p class="card-text">[El curso consiste en]</p>
+                                <p class="card-text"><small class="text-muted">Periodo de estudio: 2 meses.</small></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,14 +107,14 @@
         <!--Experiencia-->
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title">Experiencia</h3>
+                <h3 class="card-title card-title-grande">Experiencia</h3>
                 <!--Healthcare-->
-                <div class="card">
+                <div class="card card-sub">
                     <div class="row">
-                        <div class="col-sm-4">
-                            <img src="public/Healthcare logo.jpe" class="img-fluid rounded-start" alt="Logo de Healthcare Group, consultora de marketing médico">
+                        <div class="col-md-2">
+                            <img src="public/Healthcare logo.jpe" class="img-fluid rounded-start card-horizontal-image" alt="Logo de Healthcare Group, consultora de marketing médico">
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-md-10">
                             <div class="card-body">
                                 <h5 class="card-title">[como se llama lo que hice]</h5>
                                 <p class="card-text">El trabajo consistía en llamar a hospitales y consultorios para saber si los médicos de una base de datos seguían operando en los consultorios anotados en dicha base de datos, y obtener su infomación de contacto. Luego, rellenar un excel con la información obtenida.</p>
@@ -129,4 +147,5 @@
     </footer>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </html>
