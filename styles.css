@@ -34,6 +34,21 @@ body {
     transform: translateY(1px)
 }
 
+/* Login */
+
+.modal-header {
+    background-color: #005152;
+}
+
+.modal-body {
+    color: black;
+    text-align: center;
+}
+
+.modal-text {
+    margin: 10px;
+}
+
 /* Navbar */
 
 .navbar {
@@ -63,6 +78,10 @@ body {
     width: 50px;
     margin-right: 10px;
 }
+
+.btn-log {
+    margin-left: 10px;
+ }
 
 /* Card principal */
 
@@ -125,6 +144,10 @@ body {
     text-decoration: none;
 }
 
+.btn-modificar {
+    margin-left: 10px;
+}
+
 /* Habilidades blandas y duras*/
 
 .container-progress {
@@ -144,4 +167,13 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .progress-text {
+        margin-top: 20px;
+    }
+    .progress-text-primero {
+        margin-top: 1px;
+    }
 }

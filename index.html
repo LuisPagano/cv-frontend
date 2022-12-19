@@ -29,10 +29,48 @@
                   </li>
                   <li class="nav-item">
                     <!--El disabled es a proposito-->
-                    <a class="nav-link disabled" href="https://www.tumblr.com/persona134">Tumblr</a>
+                    <a class="nav-link disabled" href="https://ar.pinterest.com/Persona_134/">Pinterest</a>
                   </li>
                 </ul>
-                <button class="btn btn-dark">Login</button>
+                <button class="btn btn-dark btn-log" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                        <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                    </svg>
+                    Login
+                </button>
+
+                <!-- Login "popover" (modal) -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                                    <button type="button" class="btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5 class="modal-text">Ingrese sus datos para poder entrar</h5>
+                                    <!--Nombre de usuario-->
+                                    <label for="nombre-de-usuario" class="form-label">Nombre de usuario</label>
+                                    <input type="email" class="form-control" id="nombre-de-usuario" placeholder="name@example.com">
+                                    <!--Contraseña-->
+                                    <label for="contraseña" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="contraseña"></input>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <button class="btn btn-dark btn-log">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+                        <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                      </svg>
+                      Logout
+                </button>
               </div>
             </div>
         </nav>
@@ -44,7 +82,11 @@
             <img src="public/Biblioteca nacional austríaca.jpg" class="card-img-top" alt="Foto de portada que representa a la biblioteca nacional austríaca">
             <div class="card-body">
                 <img src="public/I wish this was me.jpg" class="img-fluid profile-pic" alt="Foto de perfil">
-                <h1 class="card-title acerca-de-title">Sergio Luis Pagano</h1>
+                <h1 class="card-title acerca-de-title">
+                    Sergio Luis Pagano 
+                    <button class="btn btn-dark">Editar</button>
+                    <button class="btn btn-dark">Agregar sección</button>
+                </h1>
                 <p class="card-text">Desarrollador FullStack jr</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
@@ -53,7 +95,9 @@
         <!--Educación-->
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title card-title-grande">Educación</h3>
+                <h3 class="card-title card-title-grande">Educación
+                    <button class="btn btn-dark btn-modificar">Agregar</button>
+                </h3>
                 <!--UBA-->
                 <div class="card card-sub">
                     <div class="row">
@@ -62,7 +106,7 @@
                         </div>
                         <div class="col-md-10">
                             <div class="card-body">
-                                <h4 class="card-title">Estudiante de Bibliotecología</h4>
+                                <h4 class="card-title">Estudiante de Bibliotecología<button class="btn btn-dark btn-modificar">Editar</button><button class="btn btn-dark btn-modificar">Borrar</button></h4>
                                 <p class="card-text">[La carrera consiste en]</p>
                                 <p class="card-text"><small class="text-muted">Periodo de estudio: 1 año, del 31 de marzo de 2022 a la actualidad.</small></p>
                           </div>
@@ -77,7 +121,7 @@
                         </div>
                         <div class="col-md-10">
                             <div class="card-body">
-                                <h4 class="card-title">Desarrollador FullStack Jr.</h4>
+                                <h4 class="card-title">Desarrollador FullStack Jr.<button class="btn btn-dark btn-modificar">Editar</button><button class="btn btn-dark btn-modificar">Borrar</button></h4>
                                 <h6 class="card-text">Título: Desarrollador FullStack Jr.</h6>
                                 <p class="card-text">[La carrera consiste en]</p>
                                 <p class="card-text"><small class="text-muted">Periodo de estudio: 4 meses, del 6 de mayo de 2022 al 16 de agosto de 2022.</small></p>
@@ -93,7 +137,7 @@
                         </div>
                         <div class="col-md-10">
                             <div class="card-body">
-                                <h4 class="card-title">Programa de conectadas</h4>
+                                <h4 class="card-title">Programa de conectadas<button class="btn btn-dark btn-modificar">Editar</button><button class="btn btn-dark btn-modificar">Borrar</button></h4>
                                 <p class="card-text">[El curso consiste en]</p>
                                 <p class="card-text"><small class="text-muted">Periodo de estudio: 2 meses, del 4 de octubre de 2021 al 7 de diciembre de 2021.</small></p>
                             </div>
@@ -106,7 +150,7 @@
         <!--Experiencia-->
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title card-title-grande">Experiencia</h3>
+                <h3 class="card-title card-title-grande">Experiencia<button class="btn btn-dark btn-modificar">Agregar</button></h3>
                 <!--Healthcare-->
                 <div class="card card-sub">
                     <div class="row">
@@ -115,7 +159,7 @@
                         </div>
                         <div class="col-md-10">
                             <div class="card-body">
-                                <h5 class="card-title">[como se llama lo que hice]</h5>
+                                <h5 class="card-title">[como se llama lo que hice]<button class="btn btn-dark btn-modificar">Editar</button><button class="btn btn-dark btn-modificar">Borrar</button></h5>
                                 <p class="card-text">El trabajo consistía en llamar a hospitales y consultorios para saber si los médicos de una base de datos seguían operando en los consultorios anotados en dicha base de datos, y obtener su infomación de contacto. Luego, rellenar un excel con la información obtenida.</p>
                                 <p class="card-text"><small class="text-muted">Periodo de trabajo: 2 semanas, del 1 de febrero de 2022 al 15 de febrero de 2022.</small></p>
                             </div>
@@ -128,12 +172,16 @@
                 <!--Habilidades blandas-->
                 <div class="card">
                     <div class="card-body">
-                        <h3 class="card-title card-title-grande">Habilidades blandas</h3>
+                        <h3 class="card-title card-title-grande">Habilidades blandas 
+                            <button class="btn btn-dark btn-modificar">Agregar</button>
+                            <button class="btn btn-dark btn-modificar">Editar</button>
+                            <button class="btn btn-dark btn-modificar">Borrar</button>
+                        </h3>
                         <div class="container container-progress">
                             <!--Empatía-->
                             <div class="row">
                                 <div class="col-12 col-md-2">
-                                    <p class="progress-text">Empatía</p>
+                                    <p class="progress-text progress-text-primero">Empatía</p>
                                 </div>
                                 <div class="col-12 col-md-10">
                                     <div class="progress">
@@ -214,7 +262,7 @@
         <!--Proyectos-->
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title card-title-grande">Proyectos</h3>
+                <h3 class="card-title card-title-grande">Proyectos <button class="btn btn-dark btn-modificar">Agregar</button></h3>
                 <!--Homebanking ITBAnk-->
                 <div class="card card-sub">
                     <div class="row">
@@ -223,7 +271,7 @@
                         </div>
                         <div class="col-md-10">
                             <div class="card-body">
-                                <h5 class="card-title">Homebanking del ITBAnk</h5>
+                                <h5 class="card-title">Homebanking del ITBAnk <button class="btn btn-dark btn-modificar">Editar</button><button class="btn btn-dark btn-modificar">Borrar</button></h5>
                                 <p class="card-text">Dentro del curso FullStack del ITBA, el trabajo integrador consistía en desarrollar una página Homebanking desde cero. [tecnologías]</p>
                                 <p class="card-text"><small class="text-muted">Periodo de trabajo: 4 meses, del 6 de mayo de 2022 al 16 de agosto de 2022.</small></p>
                                 <button class="btn btn-dark"><a class="btn-link" href="https://github.com/La-764/sprint-7">Proyecto en GitHub</a></button>
