@@ -1,14 +1,3 @@
-/* General */
-
-body {
-    margin: 0px;
-    padding: 0px;
-    background-color: #005152;
-    background-image: url(/assets/wood.png);
-    background-repeat: repeat;
-    color: #fb9e35;
-}
-
 .card {
     margin: 50px;
     border-color: #c55428;
@@ -56,26 +45,6 @@ body {
     .card-horizontal-image {
         width: 800px;
     }
-}
-
-.btn-link {
-    color:#fb9e35;
-    text-decoration: none;
-}
-
-.btn-link:hover{
-    color:#c55428;
-    text-decoration: none;
-}
-
-.btn-link:active{
-    color:#c55428;
-    text-decoration: none;
-}
-
-.btn-link:visited {
-    color:#fb9e35;
-    text-decoration: none;
 }
 
 /* Habilidades blandas*/

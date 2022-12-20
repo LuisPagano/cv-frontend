@@ -34,6 +34,10 @@ body {
     transform: translateY(1px)
 }
 
+.btn-modificar {
+    margin-left: 10px;
+}
+
 /* Login */
 
 .modal-header {
@@ -144,11 +148,7 @@ body {
     text-decoration: none;
 }
 
-.btn-modificar {
-    margin-left: 10px;
-}
-
-/* Habilidades blandas y duras*/
+/* Habilidades blandas*/
 
 .container-progress {
     margin-top: 20px;
